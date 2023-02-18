@@ -2,6 +2,6 @@
 permalink: /about.html
 ---
 
-## About
+# About
 
 [Home]( {{ site.url }})
