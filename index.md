@@ -1,14 +1,15 @@
 # What is this?
 
-This is a code generator tool for .NET projects. It wraps the `dotnet new` custom template API.
+This is a code generator tool for .NET projects. It wraps the `dotnet new` custom template API. The tool maps an OpenAPI spec onto a templated user solution. You as the user are therefore in control of the generated output.
 
 ## How to use this tool
 
-Pre-requisite:
+Pre-requisites:
 
 - at least netcore3.1 installed (but net7.0 probably better)
 - an OpenAPI yaml file, put it in a directory, e.g. `C:\\dev\\generator\\my-spec\\pet-store.yaml` here's an example one if you don't have one handy: []()
 - some templated user-code, also in a directory, e.g. `C:\\dev\\generator\\my-code`, here's a sample: []()
+- [optional] customised user-code template.
 
 Install the tool (don't worry you can easily uninstall it).
 
