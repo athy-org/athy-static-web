@@ -6,9 +6,9 @@ This is a code generator tool for .NET projects. It wraps the `dotnet new` custo
 
 Pre-requisites:
 
-- at least netcore3.1 installed (but net7.0 probably better)
-- an OpenAPI yaml file, put it in a directory, e.g. `C:\\dev\\generator\\my-spec\\pet-store.yaml` here's an example one if you don't have one handy: []()
-- some templated user-code, also in a directory, e.g. `C:\\dev\\generator\\my-code`, here's a sample: []()
+- at least netcore2.2 installed (but net7.0 probably better)
+- an OpenAPI yaml file, put it in a directory, e.g. `C:\\dev\\generator\\my-spec\\pet-store.yaml` here's [an example one if you don't have one handy](https://github.com/athy-org/athy-templates/tree/master/samples/my-spec)
+- some templated user-code, also in a directory, e.g. `C:\\dev\\generator\\my-code`, here's [a sample](https://github.com/athy-org/athy-templates/tree/master/samples/my-code)
 - [optional] customised user-code template.
 
 Install the tool (don't worry you can easily uninstall it).
@@ -20,6 +20,7 @@ Install the tool (don't worry you can easily uninstall it).
 - in case you want out at this point, you can uninstall:
 - `dotnet tool uninstall -g athy.generator.console`
 - it's a normal CLI tool so you can run `athy-generator generate -h` to see options.
+- open a new cmd line window at e.g. `C:\\dev\\generator` (*don't* open it at your %USERPROFILE% / user space directory, i.e. the default most likely, there's a performance issue with it if you do this)
 - okay, now you can run the tool like so:
 - `athy-generator generate --workingDirectory C:\\dev\\generator\\work --specFile C:\\dev\\generator\\my-spec\\pet-store.yaml --userCode C:\\dev\\generator\\my-code --solutionName web-api-v2 --outputDirectory C:\\dev\\generator\\output`
 - depending on your system you may be prompted to select an SDK. ideally you can pick the latest installed one. just enter the associated "instance number", e.g.: 1
@@ -52,6 +53,12 @@ to the devs themselves coming up with contracts in isolation. (this tool obvious
 ## Comparison with other code-generator tools
 
 If you're *really* interested (bored) I wrote some notes comparing other code-generator tools [over here](https://buildingthingswith.net/development/microservices/code-generation/2022/01/10/code-generator-comparison.html)
+
+## Known issues
+
+- it could run faster, and it runs super slow from C:\%USERPROFILE% for some reason
+- doesn't generate everything from the spec file
+- there's a bug with the output where it indents and leaves a newline above the API signature, after the swagger attributes.
 
 ## Conclusion
 
