@@ -34,6 +34,8 @@ Install the tool (don't worry you can easily uninstall it).
 
 Okay assuming your code generated successfully, you may be wondering how it works and how to use it going forward.
 
+Haha ask JP if you really wanna know ;)
+
 ## Why use this tool?
 
 Well, why use any code-generator? If you're new to the space, this type of tool can be useful if:
