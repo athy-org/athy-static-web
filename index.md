@@ -9,6 +9,7 @@ Pre-requisites:
 - at least netcore2.2 installed (but net7.0 probably better)
 - an OpenAPI yaml file, put it in a directory, e.g. `C:\\dev\\generator\\my-spec\\pet-store.yaml` here's [an example one if you don't have one handy](https://github.com/athy-org/athy-templates/tree/master/samples/my-spec)
 - some templated user-code, also in a directory, e.g. `C:\\dev\\generator\\my-code`, here's [a sample](https://github.com/athy-org/athy-templates/tree/master/samples/my-code)
+- Visual Studio 2022 (currently won't work in older versions)
 - [optional] customised user-code template.
 
 Install the tool (don't worry you can easily uninstall it).
@@ -21,6 +22,7 @@ Install the tool (don't worry you can easily uninstall it).
 - `dotnet tool uninstall -g athy.generator.console`
 - it's a normal CLI tool so you can run `athy-generator generate -h` to see options.
 - open a new cmd line window at e.g. `C:\\dev\\generator` (*don't* open it at your %USERPROFILE% / user space directory, i.e. the default most likely, there's a performance issue with it if you do this)
+- seriously, it will take like 10 minutes if you run it from some "C:\\users\\your-user" directory. 🤷‍♂️
 - okay, now you can run the tool like so:
 - `athy-generator generate --workingDirectory C:\\dev\\generator\\work --specFile C:\\dev\\generator\\my-spec\\pet-store.yaml --userCode C:\\dev\\generator\\my-code --solutionName web-api-v2 --outputDirectory C:\\dev\\generator\\output`
 - depending on your system you may be prompted to select an SDK. ideally you can pick the latest installed one. just enter the associated "instance number", e.g.: 1
