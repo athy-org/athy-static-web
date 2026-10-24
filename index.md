@@ -36,7 +36,7 @@ Install the tool (don't worry you can easily uninstall it).
 
 Okay assuming your code generated successfully, you may be wondering how it works and how to use it going forward.
 
-Haha ask JP if you really wanna know ;)
+The short version: it rewrites the `dotnet new` template from the spec (one controller method per endpoint), then runs it. The longer version is in [this write-up on Athy Labs](https://buildingthingswith.net/athy-labs/).
 
 ## Why use this tool?
 
