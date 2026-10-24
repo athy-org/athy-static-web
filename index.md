@@ -1,3 +1,7 @@
+---
+title: Athy .NET code-generator
+---
+
 # What is this?
 
 This is a code generator tool for .NET projects. It wraps the `dotnet new` custom template API. The tool maps an OpenAPI spec onto a templated user solution. You as the user are therefore in control of the generated output.
