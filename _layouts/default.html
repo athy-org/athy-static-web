@@ -9,6 +9,11 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
 {% seo %}
+    <style>
+      .showcase-note { border: 1px solid #3a3a3a; border-left: 4px solid #b5e853; background: #1f1f1f; padding: 12px 16px; margin: 0 0 30px; font-size: 0.9em; line-height: 1.5; }
+      .showcase-note p { margin: 0 0 8px; }
+      .showcase-note p:last-child { margin-bottom: 0; }
+    </style>
   </head>
 
   <body>
@@ -27,6 +32,11 @@
         <h1>Athy .NET code-generator</h1>
         <!-- <h1>{{ site.title | default: site.github.repository_name }}</h1> -->
         <p>{{ site.description | default: site.github.project_tagline }}</p>
+      </div>
+
+      <div class="showcase-note">
+        <p><strong>Archived showcase.</strong> Built 2020&ndash;2023 as part of Athy Labs, before ChatGPT and AI coding assistants were part of everyday development. It shows one way to generate .NET services from an OpenAPI spec using <code>dotnet new</code> templates and Roslyn. The tool is still on NuGet but no longer maintained.</p>
+        <p><a href="https://buildingthingswith.net/athy-labs/">The story behind it</a> &middot; <a href="https://lillylabs.co.za">Lilly Labs</a></p>
       </div>
 
       {{ content }}

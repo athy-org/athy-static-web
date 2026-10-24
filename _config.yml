@@ -1,2 +1,4 @@
 theme: jekyll-theme-midnight
-url: https://generator.athylabs.com
+title: Athy .NET code-generator
+description: OpenAPI spec in, .NET Web API solution out.
+url: https://athy-generator.lillylabs.co.za
